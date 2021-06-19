@@ -4,7 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://v1.fontapi.ir/css/ShabnamFD" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/uikit-rtl.min.css" />
+
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header"></header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-12">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <button class="button" type="button">دسته بندی</button>
+                <div class="uk-width-large" uk-dropdown>
+                  <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+                    <div>
+                      <ul class="uk-nav uk-dropdown-nav uk-text-right">
+                        <li class="uk-nav-header">مادر برد</li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">ایسوس</a></li>
+                        <li><a href="#">ام اس ای</a></li>
+                        <li><a href="#">گیگابایت</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="uk-nav uk-dropdown-nav uk-text-right">
+                        <li class="uk-nav-header">پردازنده</li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">اینتل</a></li>
+                        <li><a href="#">ام اس ای</a></li>
+                        <li><a href="#">unknow</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="uk-nav uk-dropdown-nav uk-text-right">
+                        <li class="uk-nav-header">کارت صدا</li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">audio</a></li>
+                        <li><a href="#">ام اس ای</a></li>
+                        <li><a href="#">none!</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="uk-nav uk-dropdown-nav uk-text-right">
+                        <li class="uk-nav-header">کارت گرافیک</li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">اینودیا</a></li>
+                        <li><a href="#">ام اس ای</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--linke!!!!!!-->
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="row justify-content-md-center" role="group" aria-label="Basic example">
+            <button type="button" class="btn" id="mainboard" value="Get">مادر برد</button>
+            <button type="button" class="btn" id="cpu" value="Get">پردازنده</button>
+            <button type="button" class="btn" id="sound" value="Get">کارت صدا</button>
+            <button type="button" class="btn" id="vga" value="Get">کارت گرافیک</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/uikit-icons.min.js"></script>
+    <script src="/scripts/uikit.min.js"></script>
+    <script src="/scripts/jquery.js"></script>
+  </body>
 </html>
