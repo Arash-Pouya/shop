@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://v1.fontapi.ir/css/ShabnamFD" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/uikit-rtl.min.css" />
+    <title>output</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <table class="uk-table uk-table-small uk-table-divider">
+            <thead>
+              <tr>
+                <th>اطلاعات کامل</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>نام</td>
+                <td>
+                  <!--
+                                Customer name-->
+                </td>
+              </tr>
+              <tr>
+                <td>نام شرکت</td>
+                <td>
+                  <!--
+                                company name-->
+                </td>
+              </tr>
+              <tr>
+                <td>ایمیل</td>
+                <td>
+                  <!--
+                                customer email-->
+                </td>
+              </tr>
+              <tr>
+                <td>نام دامنه</td>
+                <td>
+                  <!--
+                                site addres-->
+                </td>
+              </tr>
+              <tr>
+                <td>لوگو انتخاب شده</td>
+                <td>
+                  <img src="" id="Receipt" alt="" />
+                  <!-- customer logo link-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="uk-placeholder uk-text-center">لیست خدمات انتخاب شده</div>
+          <table class="uk-table uk-table-small uk-table-divider uk-text-center">
+            <tbody>
+              <!--Start loop-->
+              <tr>
+                <td>
+                  <!--Name of selected service -->
+                </td>
+                <td>
+                  <!--price of selected service -->
+                </td>
+              </tr>
+              <!--End loop-->
+            </tbody>
+          </table>
+          <hr class="uk-divider-icon" />
+          <table class="uk-table uk-table-small uk-table-divider">
+            <tbody>
+              <tr>
+                <td>قیمت کل محصول</td>
+                <td>
+                  <!--
+                                Total price-->
+                </td>
+              </tr>
+              <tr>
+                <td>شماره پیگیری</td>
+                <td>
+                  <!--
+                                Issue Tracking-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom" id="noPrint" onclick="window.print();"><span uk-icon="icon: print; ratio: 2.5"></span></button>
+
+          <a href="" class="btn btn-primary noPrint" id="noPrint">بازگشت به صفحه اصلی</a>
+        </div>
+      </div>
+    </div>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/uikit.min.js"></script>
+    <script src="/scripts/uikit-icons.min.js"></script>
+  </body>
+</html>

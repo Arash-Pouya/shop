@@ -2,6 +2,8 @@
   direction: rtl;
   font-family: "Shabnam FD", sans-serif;
   text-align: right;
+  text-align: justify;
+  text-justify: inter-word;
 }
 /* @font-face {} */
 @import url("https://v1.fontapi.ir/css/ShabnamFD");
@@ -33,14 +35,96 @@ h4 {
   padding: 5px;
   border-radius: 20px;
 }
-.card {
+.Card {
   margin: 5px;
   border-radius: 5px;
 }
+/* /////////home page/////////// */
 
+.wrapper {
+  margin: 10vh;
+}
+.card {
+  border: none;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  overflow: hidden;
+  border-radius: 20px;
+  min-height: 450px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .card {
+    min-height: 350px;
+  }
+}
+@media (max-width: 420px) {
+  .card {
+    min-height: 300px;
+  }
+}
+.card.card-has-bg {
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.card.card-has-bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.card.card-has-bg:hover {
+  transform: scale(0.98);
+  box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+  background-size: 130%;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card.card-has-bg:hover .card-img-overlay {
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  background: #234f6d;
+  background: linear-gradient(0deg, rgba(4, 69, 114, 0.5) 0%, rgba(4, 69, 114, 1) 100%);
+}
+.card .card-footer {
+  background: none;
+  border-top: none;
+}
+.card .card-footer .media img {
+  border: solid 3px rgba(234, 95, 0, 0.3);
+}
+.card .card-meta a {
+  color: orange;
+}
+.card .card-body {
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card:hover {
+  cursor: pointer;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card:hover .card-body {
+  margin-top: 30px;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card .card-img-overlay {
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  background: #234f6d;
+  background: linear-gradient(0deg, rgba(35, 79, 109, 0.3785889355742297) 0%, rgba(69, 95, 113, 1) 100%);
+}
+
+/* /////////home page//////////// */
 /* ////////card////////////// */
 
-.card {
+.Card {
   width: 250px;
   display: inline-block;
   margin: 5px;
@@ -51,23 +135,23 @@ h4 {
   position: relative;
   overflow: hidden;
 }
-.card:hover,
-.card.hover {
+.Card:hover,
+.Card.hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.3), 0 0 1px 0 rgba(0, 0, 0, 0.25);
 }
-.card:hover .card-content,
-.card.hover .card-content {
+.Card:hover .Card-content,
+.Card.hover .Card-content {
   box-shadow: inset 0 3px 0 0 #ccb65e;
   border-color: #ccb65e;
 }
-.card:hover .card-img .overlay,
-.card.hover .card-img .overlay {
+.Card:hover .Card-img .overlay,
+.Card.hover .Card-img .overlay {
   background-color: rgba(25, 29, 38, 0.85);
   transition: opacity 0.2s ease;
   opacity: 1;
 }
-.card-img {
+.Card-img {
   position: relative;
   height: 224px;
   width: 100%;
@@ -78,7 +162,7 @@ h4 {
   background-size: cover;
   border-radius: 10px 10px 0px 0px;
 }
-.card-img .overlay {
+.Card-img .overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -87,13 +171,13 @@ h4 {
   background-color: #fff;
   opacity: 0;
 }
-.card-img .overlay .overlay-content {
+.Card-img .overlay .overlay-content {
   line-height: 224px;
   width: 100%;
   text-align: center;
   color: #fff;
 }
-.card-img .overlay .overlay-content a {
+.Card-img .overlay .overlay-content a {
   color: #fff;
   padding: 0 2rem;
   display: inline-block;
@@ -104,12 +188,12 @@ h4 {
   cursor: pointer;
   text-decoration: none;
 }
-.card-img .overlay .overlay-content a:hover,
-.card-img .overlay .overlay-content a.hover {
+.Card-img .overlay .overlay-content a:hover,
+.Card-img .overlay .overlay-content a.hover {
   background: #ccb65e;
   border-color: #ccb65e;
 }
-.card-content {
+.Card-content {
   width: 100%;
   min-height: 104px;
   background-color: #fff;
@@ -119,17 +203,17 @@ h4 {
   padding: 1rem 2rem;
   transition: all 0.2s ease;
 }
-.card-content a {
+.Card-content a {
   text-decoration: none;
   color: #202927;
 }
-.card-content h2,
-.card-content a h2 {
+.Card-content h2,
+.Card-content a h2 {
   font-size: 1rem;
   font-weight: 500;
 }
-.card-content p,
-.card-content a p {
+.Card-content p,
+.Card-content a p {
   font-size: 0.8rem;
   font-weight: 400;
   white-space: nowrap;
@@ -141,7 +225,13 @@ h4 {
 /* /////////card////////// */
 
 /* ///////////details page///////// */
+.DETAIL {
+  padding-top: 20px;
+}
 .detail {
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0px 20px 20px 0px;
+}
+#mylist {
+  width: 500px;
 }
 /* ///////////details page///////// */
