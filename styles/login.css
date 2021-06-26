@@ -136,7 +136,7 @@ input:hover {
 
 .overlay {
   background-color: var(--lightblue);
-  background: url("/image/header.jpg");
+  background: url("image/header.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
