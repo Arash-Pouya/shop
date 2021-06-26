@@ -8,7 +8,7 @@
   --button-radius: 0.7rem;
   /* SIZES */
   --max-width: 758px;
-  --max-height: 700px;
+  --max-height: 600px;
 }
 
 body {
@@ -27,6 +27,7 @@ body {
   text-align: right;
   text-align: justify;
   text-justify: inter-word;
+  background-color: #34495e;
 }
 
 input {
@@ -73,7 +74,20 @@ input:hover {
   position: relative;
   width: 100%;
 }
+.social {
+  display: flex;
+}
+.social a img {
+  max-width: 50%;
+  height: auto;
+}
 
+.sociallogin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-bottom: 2px outset #34495e;
+}
 .container__form {
   height: 100%;
   position: absolute;
@@ -87,7 +101,7 @@ input:hover {
   z-index: 2;
 }
 
-.container.right-panel-active .container--signin {
+.container.right-panel-active .container-- {
   transform: translateX(100%);
 }
 
