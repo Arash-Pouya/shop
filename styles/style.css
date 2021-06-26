@@ -44,6 +44,10 @@ input {
   border-radius: 20px;
   margin-top: 10px;
 }
+.btn-danger {
+  border-radius: 5px;
+  font-size: 15px;
+}
 .logo {
   float: right;
   padding: 26px 0 26px;
@@ -77,6 +81,8 @@ nav li a {
 }
 nav li a:hover {
   background: #2c3e50;
+  border-radius: 10px;
+  text-decoration: none;
 }
 nav li ul {
   display: none;
@@ -110,6 +116,7 @@ nav .mega-dropdown {
   overflow: hidden;
   padding: 20px 35px;
   border-bottom: 3px solid #34495e;
+  border-radius: 10px;
 }
 nav li li a {
   float: none;
