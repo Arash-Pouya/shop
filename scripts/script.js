@@ -1,3 +1,12 @@
+///navbar//////
+$("#header").prepend('<div id="menu-icon"><span class="first"></span><span class="second"></span><span class="third"></span></div>');
+
+$("#menu-icon").on("click", function () {
+  $("nav").slideToggle();
+  $(this).toggleClass("active");
+});
+///navbar//////
+///card//////
 $(document).ready(function () {
   $(".card")
     .delay(1800)
@@ -7,6 +16,8 @@ $(document).ready(function () {
       next();
     });
 });
+///card//////
+
 /* ///////////details page///////// */
 
 /* ///////////details page///////// */
