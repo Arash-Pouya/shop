@@ -74,7 +74,8 @@ input:hover {
   color: rgb(255, 0, 0);
 }
 .container {
-  background-color: var(--white);
+  /* background-color: var(--white); */
+  background-color: #34495e;
   border-radius: var(--button-radius);
   box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25), 0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
   height: var(--max-height);
@@ -97,7 +98,7 @@ input:hover {
   margin-top: 20px;
   margin-bottom: 10px;
   width: 100%;
-  border-bottom: 2px outset #34495e;
+  /* border-bottom: 1px outset #34495e; */
   color: white;
 }
 .container__form {
