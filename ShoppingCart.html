@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://v1.fontapi.ir/css/ShabnamFD" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/ShoppinCart.css" />
+    <link rel="stylesheet" href="styles/uikit-rtl.min.css" />
+
+    <title>shopping cart</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="basket">
+            <div class="basket-module">
+              <label for="promo-code">وارد کردن کد تخفیف</label>
+              <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field" />
+              <button class="promo-code-cta">اعمال تخفیف</button>
+            </div>
+            <div class="basket-labels">
+              <ul>
+                <li class="item item-heading">محصول انتخاب شده</li>
+                <li class="price">قیمت</li>
+                <li class="quantity">تعداد</li>
+                <li class="subtotal">جمع کل</li>
+              </ul>
+            </div>
+            <div class="basket-product">
+              <div class="item">
+                <div class="product-image">
+                  <img src="http://placehold.it/120x166" alt="Placholder Image 2" class="product-frame" />
+                </div>
+                <div class="product-details">
+                  <h1>
+                    <strong>مادربرد AMD</strong>
+                  </h1>
+                  <p><strong>مدل KVS</strong></p>
+                  <p>سری ساخت 124183</p>
+                </div>
+              </div>
+              <div class="price">200</div>
+              <div class="quantity">
+                <input type="number" value="1" min="1" class="quantity-field" />
+              </div>
+              <div class="remove">
+                <button>حذف</button>
+              </div>
+            </div>
+          </div>
+          <aside>
+            <div class="summary">
+              <div class="summary-total-items"><span class="total-items"></span> تعداد محصولات انتخاب شده</div>
+              <div class="summary-subtotal">
+                <div class="subtotal-title">ریز قیمت</div>
+                <div class="subtotal-value final-value" id="basket-subtotal"></div>
+                <!-- <div class="summary-promo hide">
+                  <div class="promo-title">Promotion</div>
+                  <div class="promo-value final-value" id="basket-promo"></div>
+                </div> -->
+              </div>
+              <div class="summary-total">
+                <div class="total-title">جمع کل</div>
+                <div class="total-value final-value" id="basket-total"></div>
+              </div>
+              <div class="summary-checkout">
+                <button class="checkout-cta">رفتن به صفحه پرداخت</button>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/SoppingCart.js"></script>
+    <script src="scripts/uikit-icons.min.js"></script>
+    <script src="scripts/uikit.min.js"></script>
+    <script src="scripts/jquery.js"></script>
+  </body>
+</html>
