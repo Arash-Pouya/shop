@@ -18,7 +18,7 @@ a {
 }
 
 strong {
-  font-weight: bold;
+  font-size: 30px;
 }
 
 p {
@@ -70,11 +70,19 @@ button,
   float: right;
 }
 
-.price:before,
+.price:before {
+  content: "ریال";
+  margin-left: 25px;
+  float: left;
+}
+
+/* .price:before, */
 .subtotal:before,
-.subtotal-value:before,
+/* .subtotal-value:before, */
 .total-value:before,
 .promo-value:before {
+  float: left;
+  margin-right: 5px;
   content: "ریال";
 }
 
@@ -169,7 +177,10 @@ li.subtotal:before {
 }
 
 .subtotal {
-  text-align: right;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
 
 .remove {
@@ -204,13 +215,17 @@ li.subtotal:before {
 .product-image {
   width: 35%;
 }
-
+.product-image img {
+  width: 200px;
+  height: 200px;
+}
 .product-details {
   width: 65%;
 }
 
 .product-frame {
   border: 1px solid #aaa;
+  border-radius: 5px;
 }
 
 .product-details {
@@ -264,13 +279,15 @@ aside {
 }
 
 .subtotal-title,
-.subtotal-value,
+/* .subtotal-value, */
 .total-title,
 .total-value,
 .promo-title,
 .promo-value {
   color: #111;
-  float: left;
+  float: right;
+  /* margin: 5px;
+  padding: 10px; */
   width: 50%;
 }
 
@@ -297,7 +314,7 @@ aside {
   padding-bottom: 3rem;
 }
 
-.subtotal-value,
+/* .subtotal-value, */
 .total-value {
   text-align: right;
 }

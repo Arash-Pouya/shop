@@ -51,28 +51,28 @@ function recalculateCart(onlyTotal) {
   var total = subtotal;
 
   //If there is a valid promoCode, and subtotal < 10 subtract from total
-  var promoPrice = parseFloat($(".promo-value").text());
-  if (promoPrice) {
-    if (subtotal >= 10) {
-      total -= promoPrice;
-    } else {
-      alert("Order must be more than £10 for Promo code to apply.");
-      $(".summary-promo").addClass("hide");
-    }
-  }
+  // var promoPrice = parseFloat($(".promo-value").text());
+  // if (promoPrice) {
+  //   if (subtotal >= 10) {
+  //     total -= promoPrice;
+  //   } else {
+  //     alert("Order must be more than £10 for Promo code to apply.");
+  //     $(".summary-promo").addClass("hide");
+  //   }
+  // }
 
   /*If switch for update only total, update only total display*/
   if (onlyTotal) {
     /* Update total display */
     $(".total-value").fadeOut(fadeTime, function () {
-      $("#basket-total").html(total.toFixed(2));
+      $("#basket-total").html(total.toFixed(0));
       $(".total-value").fadeIn(fadeTime);
     });
   } else {
     /* Update summary display. */
     $(".final-value").fadeOut(fadeTime, function () {
-      $("#basket-subtotal").html(subtotal.toFixed(2));
-      $("#basket-total").html(total.toFixed(2));
+      $("#basket-subtotal").html(subtotal.toFixed(0));
+      $("#basket-total").html(total.toFixed(0));
       if (total == 0) {
         $(".checkout-cta").fadeOut(fadeTime);
       } else {
@@ -94,14 +94,14 @@ function updateQuantity(quantityInput) {
   /* Update line price display and recalc cart totals */
   productRow.children(".subtotal").each(function () {
     $(this).fadeOut(fadeTime, function () {
-      $(this).text(linePrice.toFixed(2));
+      $(this).text(linePrice.toFixed(0));
       recalculateCart();
       $(this).fadeIn(fadeTime);
     });
   });
 
-  productRow.find(".item-quantity").text(quantity);
-  updateSumItems();
+  // productRow.find(".item-quantity").text(quantity);
+  // updateSumItems();
 }
 
 function updateSumItems() {
