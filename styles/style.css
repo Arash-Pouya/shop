@@ -42,9 +42,10 @@ nav a {
 .ICON {
   float: left;
 }
-.ICON span {
-  margin: 0px 0px 20px 0px;
+.ICON .uk-badge {
+  margin: 0px 2px 20px 0px;
   background-color: red;
+  border-radius: 10px;
 }
 .ICON a i {
   margin: 20px 10px 0px 10px;
@@ -212,10 +213,10 @@ nav li li a:hover {
     display: none;
   }
   .search {
-    float: none;
+    float: left;
   }
   .search input {
-    width: 100%;
+    width: 80%;
   }
   nav {
     padding: 10px;
