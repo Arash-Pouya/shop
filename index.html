@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="https://v1.fontapi.ir/css/ShabnamFD" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/uikit-rtl.min.css" />
 
@@ -19,7 +20,6 @@
       <div id="header">
         <div class="logo">
           <!-- <a href="#">logo</a> -->
-          <a href="login.html"><button type="button" class="btn btn-danger">ورود / ثبت نام</button></a>
         </div>
         <nav>
           <ul>
@@ -72,14 +72,17 @@
             <li>
               <a href="">پیشنهادت ویژه</a>
             </li>
-            <li>
-              <a href="ShoppingCart.html"><button type="button" class="btn btn-danger">سبد خرید</button></a>
-            </li>
           </ul>
         </nav>
         <form class="search" action="">
           <input name="q" placeholder="جستجو" type="search" />
         </form>
+        <div class="ICON">
+          <a href="login.html"><i id="user" class="material-icons"> person_outline </i></a>
+          <a href="ShoppingCart.html"
+            ><i class="material-icons"> shopping_cart <span class="uk-badge">10</span></i></a
+          >
+        </div>
       </div>
     </header>
     <section class="wrapper">

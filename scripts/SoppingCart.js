@@ -122,3 +122,11 @@ function removeItem(removeButton) {
     updateSumItems();
   });
 }
+
+anime({
+  targets: ".div",
+  translateX: 200,
+  direction: "alternate",
+  loop: true,
+  easing: "linear",
+});

@@ -36,13 +36,32 @@ nav a {
 }
 .search {
   float: left;
+  display: flex;
   padding: 5px;
 }
-input {
+.ICON {
+  float: left;
+}
+.ICON span {
+  margin: 0px 0px 20px 0px;
+  background-color: red;
+}
+.ICON a i {
+  margin: 20px 10px 0px 10px;
+  color: white;
+  /* background-color: white; */
+  border-radius: 5px;
+  padding: 5px;
+}
+#user {
+  background-color: white;
+  color: black;
+}
+.search input {
   border: none;
   padding: 10px;
   border-radius: 20px;
-  margin-top: 10px;
+  margin: 10px 0px 0px 20px;
 }
 .btn-danger {
   border-radius: 5px;
