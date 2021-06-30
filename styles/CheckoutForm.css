@@ -36,6 +36,7 @@ body {
   background-color: #34495e;
   width: 340px;
   border-bottom: 1px double red;
+  border-top-right-radius: 10px;
 }
 .rightheader p {
   text-align: center;
@@ -47,7 +48,55 @@ body {
 .items div {
   margin-bottom: 10px;
 }
+.BTN {
+  margin-top: 10px;
+}
+
+.BTN {
+  display: flex;
+}
+
+button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  /* text-align: center; */
+  font-size: 15px;
+  padding: 10px 10px 5px 0px;
+  width: 50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+button:hover {
+  width: 80px;
+}
+button a {
+  color: white;
+  display: none;
+  text-decoration: none;
+}
+button:hover a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+button span {
+  right: 0;
+  display: block;
+}
+button:hover span {
+  display: none;
+}
+
 .left {
   height: 400px;
   border-radius: 10px;
+}
+@media print {
+  div.right,
+  div.BTN {
+    display: none;
+  }
 }
