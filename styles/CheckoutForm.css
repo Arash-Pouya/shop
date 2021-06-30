@@ -100,3 +100,23 @@ button:hover span {
     display: none;
   }
 }
+
+.line {
+  width: auto;
+  height: 400px;
+  background-color: black;
+  /* position: absolute; */
+  display: flex;
+  float: left;
+  flex-direction: column;
+}
+
+.show {
+  background-color: red;
+  float: left;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-top: 80px;
+  margin-left: 20px;
+}

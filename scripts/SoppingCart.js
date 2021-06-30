@@ -122,11 +122,16 @@ function removeItem(removeButton) {
     updateSumItems();
   });
 }
-
 anime({
   targets: ".div",
   translateX: 200,
   direction: "alternate",
   loop: true,
   easing: "linear",
+});
+
+anime({
+  targets: ".show",
+  translateX: 270,
+  delay: anime.stagger(100), // increase delay by 100ms for each elements.
 });
