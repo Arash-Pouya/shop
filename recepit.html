@@ -8,8 +8,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="https://v1.fontapi.ir/css/ShabnamFD" rel="stylesheet" />
-    <link rel="stylesheet" href="/styles/style.css" />
-    <link rel="stylesheet" href="/styles/uikit-rtl.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="styles/CheckoutForm.css" />
+    <link rel="stylesheet" href="styles/uikit-rtl.min.css" />
     <title>output</title>
   </head>
 
@@ -26,42 +27,15 @@
             <tbody>
               <tr>
                 <td>نام</td>
-                <td>
-                  <!--
-                                Customer name-->
-                </td>
+                <td>سجاد آریایی</td>
               </tr>
               <tr>
                 <td>نام شرکت</td>
-                <td>
-                  <!--
-                                company name-->
-                </td>
-              </tr>
-              <tr>
-                <td>ایمیل</td>
-                <td>
-                  <!--
-                                customer email-->
-                </td>
-              </tr>
-              <tr>
-                <td>نام دامنه</td>
-                <td>
-                  <!--
-                                site addres-->
-                </td>
-              </tr>
-              <tr>
-                <td>لوگو انتخاب شده</td>
-                <td>
-                  <img src="" id="Receipt" alt="" />
-                  <!-- customer logo link-->
-                </td>
+                <td>-----</td>
               </tr>
             </tbody>
           </table>
-          <div class="uk-placeholder uk-text-center">لیست خدمات انتخاب شده</div>
+          <div class="uk-placeholder uk-text-center">محصولات انتخاب شده</div>
           <table class="uk-table uk-table-small uk-table-divider uk-text-center">
             <tbody>
               <!--Start loop-->
@@ -82,27 +56,26 @@
               <tr>
                 <td>قیمت کل محصول</td>
                 <td>
-                  <!--
-                                Total price-->
+                  <!--Total price-->
                 </td>
               </tr>
               <tr>
                 <td>شماره پیگیری</td>
                 <td>
-                  <!--
-                                Issue Tracking-->
+                  <!--Issue Tracking-->
                 </td>
               </tr>
             </tbody>
           </table>
-          <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom" id="noPrint" onclick="window.print();"><span uk-icon="icon: print; ratio: 2.5"></span></button>
-
-          <a href="" class="btn btn-primary noPrint" id="noPrint">بازگشت به صفحه اصلی</a>
+        </div>
+        <div class="BTN">
+          <button><span class="material-icons"> chevron_left </span><a href="">بازگشت</a></button>
+          <button onclick="window.print()"><span class="material-icons"> save </span><a href="">ذخیره</a></button>
         </div>
       </div>
     </div>
-    <script src="/scripts/script.js"></script>
-    <script src="/scripts/uikit.min.js"></script>
-    <script src="/scripts/uikit-icons.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/uikit.min.js"></script>
+    <script src="scripts/uikit-icons.min.js"></script>
   </body>
 </html>

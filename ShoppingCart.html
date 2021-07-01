@@ -14,15 +14,16 @@
     <title>shopping cart</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-sm bg-dark justify-content-center fixed-top d-flex flex-column">
+      <a class="navbar-brand" href="#">
+        <img src="image/icons/example.jpg" alt="" />
+      </a>
+      <p>سجاد آریایی</p>
+    </nav>
     <div class="container">
       <div class="row">
         <div class="col-xl-12">
           <div class="basket">
-            <div class="basket-module">
-              <label for="promo-code">وارد کردن کد تخفیف</label>
-              <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field" />
-              <button class="promo-code-cta">اعمال تخفیف</button>
-            </div>
             <div class="basket-labels">
               <ul>
                 <li class="item item-heading">محصول انتخاب شده</li>
@@ -90,17 +91,19 @@
               <div class="summary-total">
                 <div class="total-title">جمع کل</div>
                 <div class="total-value final-value" id="basket-total"></div>
+                <div class="basket-module">
+                  <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field" />
+                  <button class="promo-code-cta">اعمال تخفیف</button>
+                </div>
               </div>
               <div class="summary-checkout">
-                <button class="checkout-cta">رفتن به صفحه پرداخت</button>
+                <button class="checkout-cta">مشاهده فاکتور</button>
               </div>
             </div>
           </aside>
         </div>
       </div>
     </div>
-    <img src="image/icons/cart.png" class="div" alt="" />
-
     <script src="scripts/anime.min.js"></script>
     <script src="scripts/SoppingCart.js"></script>
     <script src="scripts/uikit-icons.min.js"></script>
