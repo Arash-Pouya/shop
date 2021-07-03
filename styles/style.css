@@ -460,6 +460,23 @@ nav li li a:hover {
   color: rgba(32, 41, 28, 0.8);
 }
 
+/* #takhfif {
+  background-color: red;
+  width: 800px;
+  border-radius: 10px;
+} */
+.slide {
+  background-color: red;
+  /* display: flex; */
+  height: 150px;
+  border-radius: 10px;
+}
+.PR {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
 /* /////////card////////// */
 
 /* ///////////details page///////// */
