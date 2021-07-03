@@ -33,7 +33,7 @@ $(".promo-code-cta").click(function () {
   //If there is a promoPrice that has been set (it means there is a valid promoCode input) show promo
   if (promoPrice) {
     $(".summary-promo").removeClass("hide");
-    $(".promo-value").text(promoPrice.toFixed(2));
+    $(".promo-value").text(promoPrice.toFixed(0));
     recalculateCart(true);
   }
 });
@@ -50,16 +50,16 @@ function recalculateCart(onlyTotal) {
   /* Calculate totals */
   var total = subtotal;
 
-  //If there is a valid promoCode, and subtotal < 10 subtract from total
-  // var promoPrice = parseFloat($(".promo-value").text());
-  // if (promoPrice) {
-  //   if (subtotal >= 10) {
-  //     total -= promoPrice;
-  //   } else {
-  //     alert("Order must be more than £10 for Promo code to apply.");
-  //     $(".summary-promo").addClass("hide");
-  //   }
-  // }
+  // If there is a valid promoCode, and subtotal < 10 subtract from total
+  var promoPrice = parseFloat($(".promo-value").text());
+  if (promoPrice) {
+    if (subtotal >= 10) {
+      total -= promoPrice;
+    } else {
+      alert("Order must be more than £10 for Promo code to apply.");
+      $(".summary-promo").addClass("hide");
+    }
+  }
 
   /*If switch for update only total, update only total display*/
   if (onlyTotal) {
