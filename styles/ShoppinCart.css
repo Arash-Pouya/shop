@@ -13,7 +13,8 @@ body {
 }
 nav {
   color: white;
-  width: 200px;
+  width: 240px;
+  border-bottom-left-radius: 10px;
 }
 nav img {
   width: 50px;
@@ -25,6 +26,7 @@ a {
   border: 0 none;
   outline: 0;
   text-decoration: none;
+  color: white;
 }
 
 strong {
@@ -348,7 +350,14 @@ aside {
   padding: 0.625rem 0;
   width: 100%;
 }
-
+.checkout-cta a {
+  color: white;
+  text-decoration: none;
+}
+.checkout-cta a:hover {
+  color: white;
+  text-decoration: none;
+}
 .summary-delivery-selection {
   background-color: #ccc;
   border: 1px solid #aaa;
