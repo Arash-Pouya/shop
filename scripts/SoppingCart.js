@@ -22,12 +22,12 @@ $(".promo-code-cta").click(function () {
   if (promoCode == "10off" || promoCode == "10OFF") {
     //If promoPrice has no value, set it as 10 for the 10OFF promocode
     if (!promoPrice) {
-      promoPrice = 10;
+      promoPrice = 10000000;
     } else if (promoCode) {
       promoPrice = promoPrice * 1;
     }
   } else if (promoCode != "") {
-    alert("Invalid Promo Code");
+    alert("کد اشتباه است");
     promoPrice = 0;
   }
   //If there is a promoPrice that has been set (it means there is a valid promoCode input) show promo
@@ -56,7 +56,7 @@ function recalculateCart(onlyTotal) {
     if (subtotal >= 10) {
       total -= promoPrice;
     } else {
-      alert("Order must be more than £10 for Promo code to apply.");
+      alert("");
       $(".summary-promo").addClass("hide");
     }
   }
