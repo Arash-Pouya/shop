@@ -17,26 +17,62 @@ $(document).ready(function () {
 });
 
 $(".promo-code-cta").click(function () {
-  promoCode = $("#promo-code").val();
+  /////////test ajax////////////
+  if ($(".basket-module").val() != "") {
+    $.ajax({
+      type: "POST",
+      url: "", ///////enter url/////
+      data: {
+        coupon_code: $("#promo-code").val(),
+      },
+      success: function (dataResult) {
+        var dataResult = JSON.parse(dataResult);
+        if (dataResult.statusCode == 200) {
+          var after_apply = $("#basket-total").val() - dataResult.value;
+          $("#basket-total").val(after_apply);
+          // $('#apply').hide();
+          // $('#edit').show();
+          // $('#message').html("Promocode applied successfully !");
+          alert("کد صحیح است");
+        } else if (dataResult.statusCode == 201) {
+          alert("کد اشتباه است 201 erorr");
+          // $('#message').html("Invalid promocode !");
+        }
+      },
+    });
+  } else {
+    alert("کد اشتباه است ajax");
+    // $('#message').html("Promocode can not be blank .Enter a Valid Promocode !");
+  }
 
-  if (promoCode == "10off" || promoCode == "10OFF") {
-    //If promoPrice has no value, set it as 10 for the 10OFF promocode
-    if (!promoPrice) {
-      promoPrice = 10000000;
-    } else if (promoCode) {
-      promoPrice = promoPrice * 1;
-    }
-  } else if (promoCode != "") {
-    alert("کد اشتباه است");
-    promoPrice = 0;
-  }
-  //If there is a promoPrice that has been set (it means there is a valid promoCode input) show promo
-  if (promoPrice) {
-    $(".summary-promo").removeClass("hide");
-    $(".promo-value").text(promoPrice.toFixed(0));
-    recalculateCart(true);
-  }
+  // $("#edit").click(function(){
+  // 	$('#coupon_code').val("");
+  // 	$('#apply').show();
+  // 	$('#edit').hide();
+  // 	location.reload();
 });
+
+/////////test ajax////////////
+// promoCode = $("#promo-code").val();
+
+// if (promoCode == "10off" || promoCode == "10OFF") {
+//   //If promoPrice has no value, set it as 10 for the 10OFF promocode
+//   if (!promoPrice) {
+//     promoPrice = 10000000;
+//   } else if (promoCode) {
+//     promoPrice = promoPrice * 1;
+//   }
+// } else if (promoCode != "") {
+//   alert("کد اشتباه است");
+//   promoPrice = 0;
+// }
+//If there is a promoPrice that has been set (it means there is a valid promoCode input) show promo
+//   if (promoPrice) {
+//     $(".summary-promo").removeClass("hide");
+//     $(".promo-value").text(promoPrice.toFixed(0));
+//     recalculateCart(true);
+//   }
+// });
 
 /* Recalculate cart */
 function recalculateCart(onlyTotal) {
