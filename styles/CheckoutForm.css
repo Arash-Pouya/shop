@@ -29,21 +29,21 @@ body {
   overflow-y: scroll;
   background-color: #34495e;
   color: white;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
 }
 .rightheader {
-  position: fixed;
   background-color: #34495e;
   width: 340px;
   border-bottom: 1px double red;
-  border-top-right-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
 }
 .rightheader p {
   text-align: center;
   padding-top: 20px;
+  color: white;
 }
 .items {
-  margin: 80px 10px 0px 0px;
+  margin: 10px 10px 0px 0px;
 }
 .items div {
   margin-bottom: 10px;
@@ -119,4 +119,15 @@ button:hover span {
   position: relative;
   margin-top: 80px;
   margin-left: 20px;
+}
+
+@media only screen and (max-width: 1119px) {
+  .right {
+    width: 380px;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: #34495e;
+    color: white;
+    border-radius: 10px;
+  }
 }

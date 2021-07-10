@@ -18,7 +18,7 @@ $(document).ready(function () {
 
 $(".promo-code-cta").click(function () {
   /////////test ajax////////////
-  if ($(".basket-module").val() != "") {
+  if ($(".basket-module").val() != " ") {
     $.ajax({
       type: "POST",
       url: "", ///////enter url/////
