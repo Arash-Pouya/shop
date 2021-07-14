@@ -1,4 +1,13 @@
 /* Set values + misc */
+$(document).ready(function () {
+  $("#one").load("../test.json", function () {
+    alert("Load test");
+  });
+});
+////../test.html ====> ajax link
+{
+  /* <p id="one"></p> add to price class name in html page */
+}
 var promoCode;
 var promoPrice;
 var fadeTime = 300;
@@ -18,22 +27,21 @@ $(document).ready(function () {
 
 $(".promo-code-cta").click(function () {
   /////////test ajax////////////
-  if ($(".basket-module").val() != " ") {
+  if ($(".basket-module").val() != "") {
     $.ajax({
       type: "POST",
       url: "", ///////enter url/////
       data: {
-        coupon_code: $("#promo-code").val(),
+        coupon_code: $("#promo-code").val("a"),
       },
       success: function (dataResult) {
         var dataResult = JSON.parse(dataResult);
         if (dataResult.statusCode == 200) {
           var after_apply = $("#basket-total").val() - dataResult.value;
-          $("#basket-total").val(after_apply);
+          $("#basket-total").html(after_apply);
           // $('#apply').hide();
           // $('#edit').show();
           // $('#message').html("Promocode applied successfully !");
-          alert("کد صحیح است");
         } else if (dataResult.statusCode == 201) {
           alert("کد اشتباه است 201 erorr");
           // $('#message').html("Invalid promocode !");
