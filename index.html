@@ -25,6 +25,7 @@
           <ul>
             <li>
               <a href="">صفحه اصلی</a>
+              <button class="uk-button uk-button-default" id="help" href="#modal-overflow" uk-toggle>راهنما</button>
             </li>
             <li>
               <a href="">دسته بندی</a>
@@ -320,6 +321,122 @@
         </div>
       </div>
     </div>
+    <div id="modal-overflow" uk-modal>
+      <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <br />
+        <div class="uk-modal-header"><p class="helpText">راهنما</p></div>
+        <div class="uk-modal-body uk-text-right" id="helpText" uk-overflow-auto>
+          <p>توضیحات</p>
+          <ul class="uk-list">
+            <li>تمام لینک ها برای مشاهده نمونه صفحات طراحی شده کار می کنند، بخشی سبد خرید قابلیت اجرای کپن تخفیف دارد.</li>
+            <li>این نمونه کار قابلی شخصی سازی به نظر مشتری را داراست و امکانت اضافه کردن بخش های دلخواه را دارد.</li>
+            <li>در قسمت پیشنهادات آیتم ها به صورت هاور کردن تغییر می کند که برای استفاده سایت در موبایل راحت تر باشد.</li>
+            <li>زمان تحویل پروژه باتوجه به طرح های مشتری متفاوت است.</li>
+            <li></li>
+          </ul>
+          <hr />
+          <!-- <p>نمونه صفحات طراحی شده</p>
+          <ul class="uk-list">
+            <li>فاکتور قبل از پرداخت : صفحه نمایش محصولات انتخاب شده به همراه اطلاعات مشتری قبل از پرداخت.</li>
+            <li>فاکتور بعد از پرداخت : صفحه نمایش رسید مشتری بعد از پرداخت وجه.</li>
+            <li>پیگیری سفارش : در این صفحه مشتری با وارد کردن ایمیل می تواند وضعیت سفارش خود را پیگیری کند. " این قسمت می تواند به صورت مجزا یا در صفحه اصلی نمایش داده شود "</li>
+          </ul> -->
+          <ul class="uk-list">
+            <p>تکنولوژی های استفاده شده در سایت</p>
+            <div class="uk-child-width-expand@s" uk-grid>
+              <div>
+                <h4>فرنت اند</h4>
+                <ul class="uk-list">
+                  <li>HTML</li>
+                  <li>CSS3</li>
+                  <li>Bootstrap 4</li>
+                  <li>Ulkit</li>
+                  <li>JavaScript</li>
+                  <li>Ajax</li>
+                  <li>Jquery3</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4>بک اند</h4>
+                <ul class="uk-list">
+                  <li>python</li>
+                  <li>django</li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+          <button class="uk-button uk-button-default uk-modal-close" type="button">خروج</button>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <footer class="footer-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 mb-50">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <a href="index.html"><img src="image/logopng.png" class="img-fluid" alt="logo" /></a>
+              </div>
+              <div class="footer-text">
+                <em>بیگ تک</em>
+                <p>زیر مجموعه ی شرکت رایانه پندار آپادانا می باشد که در زمینه ی طراحی سایت و امور برنامه نویسی تحت وب فعالیت دارد</p>
+              </div>
+              <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                  <div class="col-xl-4 col-md-12">
+                    <div class="single-cta">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <div class="cta-text">
+                        <a href="" class="uk-icon-button" uk-icon="location"></a>&nbsp;
+                        <span>خوزستان، اهواز</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-12">
+                    <div class="single-cta">
+                      <i class="fas fa-phone"></i>
+                      <div class="cta-text">
+                        <a href="" class="uk-icon-button" uk-icon="receiver"></a>&nbsp;
+                        <span>09376736885</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-12">
+                    <div class="single-cta">
+                      <i class="far fa-envelope-open"></i>
+                      <div class="cta-text">
+                        <a href="" class="uk-icon-button" uk-icon="mail"></a>&nbsp;
+                        <span>bigtech.webcompany@gmail.com</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-social-icon">
+                <a href="https://www.linkedin.com/in/big-tech-8115a01b9/" class="uk-icon-button uk-margin-small-right" uk-icon="linkedin" id="linkedin"></a>
+                <!-- Set link-->
+                <a href="https://www.instagram.com/bigtech.co/" class="uk-icon-button uk-margin-small-right" uk-icon="instagram" id="instagram"></a>
+                <!-- Set link-->
+                <a href="https://wa.me/989376736885" class="uk-icon-button" uk-icon="whatsapp" id="whatsapp"></a>
+                <!-- Set link-->
+              </div>
+              <hr />
+              <div>
+                <em
+                  ><p>تمامی حقوق این وب سایت نزد شرکت <em> رایانه پندار آپادانا </em> محفوظ است.</p>
+                </em>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="scripts/script.js"></script>
     <script src="scripts/uikit-icons.min.js"></script>
     <script src="scripts/uikit.min.js"></script>

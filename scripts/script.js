@@ -15,6 +15,7 @@ $(document).ready(function () {
       $("a.hover").removeClass("hover");
       next();
     });
+  $("#help").trigger("click");
 });
 ///card//////
 ///////////login//////////
